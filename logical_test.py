@@ -30,7 +30,7 @@ def number_to_thai_text(number):
     if 0 <= number < 10000000:
         num_text = ""
 
-        # แปลงตัวเลขให้เป็นสตริงเพื่อที่จะสามารถวนลูปเรียกใช้ตัวเลขแต่ละหลักได้
+        
         num_str = str(number)
         num_length = len(num_str)
 
@@ -47,7 +47,7 @@ def number_to_thai_text(number):
     else:
         return "ค่าที่รับต้องอยู่ในช่วง 0 ถึง 10 ล้านเท่านั้น"
 
-# รับค่าจากผู้ใช้
+
 input_number = int(input("กรุณาใส่ตัวเลขระหว่าง 0 ถึง 10 ล้าน: "))
 thai_text = number_to_thai_text(input_number)
 print("ค่าของคุณเป็น:", thai_text)
